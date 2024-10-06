@@ -1,4 +1,4 @@
-def insertion_sort_reverse(to_sort):
+def insertion_sort_reverse(to_sort: list) -> list:
     for i in range(1, len(to_sort)):
         key = to_sort[i]
         j = i - 1
