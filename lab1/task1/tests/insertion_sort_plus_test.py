@@ -11,20 +11,19 @@ class TestCaesar(unittest.TestCase):
             [1000000000, 1000000000, 50000000],
             [-1000000000, -1000000000, 50000000],
             [i for i in range(1000)],
-            [i for i in range(1000, 0)]
+            [i for i in range(1000, 0, -1)]
         ]
         answers = [
             [1, 1, 1, 1, 1],
             [1, 2, 3, 1, 4, 5],
             [1, 2, 1],
             [1, 2, 3],
-            [i for i in range(1, 1000)],
-            [1 for i in range(1, 1000)]
+            [i for i in range(1, 1001)],
+            [1 for i in range(1, 1001)]
         ]
-        for i in test_input:
+        for i in range(len(test_input)):
             test = test_input[i]
             ans = answers[i]
-            self.assertEqual('123', '123')
 
             a, b = insertion_sort(test)
             self.assertEqual(a, ans)

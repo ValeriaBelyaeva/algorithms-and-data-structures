@@ -12,6 +12,7 @@ def insertion_sort(to_sort: list)-> (list, list):
 
     return (swap_id, to_sort)
 
+
 '''inp_file = open("input")
 inp = list(map(int, inp_file.readline().split()))
 inp_file.close()
