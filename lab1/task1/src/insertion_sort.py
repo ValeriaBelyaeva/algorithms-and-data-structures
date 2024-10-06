@@ -10,7 +10,7 @@ def insertion_sort(to_sort: list) -> list:
     return to_sort
 
 
-inp_file = open("input")
+'''inp_file = open("input")
 inp = list(map(int, inp_file.readline().split()))
 inp_file.close()
 out_file = open("output", 'w')
@@ -23,4 +23,4 @@ try:
 except:
     print('we have egor :(')
 
-out_file.close()
+out_file.close()'''

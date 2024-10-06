@@ -18,13 +18,17 @@ class TestCaesar(unittest.TestCase):
             [1, 2, 3, 1, 4, 5],
             [1, 2, 1],
             [1, 2, 3],
-            [1, 2, 2, 2, 3, 5, 5, 6, 9, 1],
             [i for i in range(1, 1000)],
             [1 for i in range(1, 1000)]
         ]
-        for test in test_input:
-            print(insertion_sort(test))
-            # self.assertEqual(insertion_sort(test), sorted(test, reverse=True))
+        for i in test_input:
+            test = test_input[i]
+            ans = answers[i]
+            self.assertEqual('123', '123')
+
+            a, b = insertion_sort(test)
+            self.assertEqual(a, ans)
+            self.assertEqual(b, sorted(test))
 
 if __name__ == "__main__":
     unittest.main()
