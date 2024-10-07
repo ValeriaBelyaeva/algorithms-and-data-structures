@@ -1,5 +1,5 @@
 import unittest
-from lab1.task1.src.insertion_sort_descending_order import insertion_sort_reverse
+from lab1.task3.src.insertion_sort_descending_order import insertion_sort_reverse
 
 
 class TestCaesar(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from lab1.task1.src.insertion_sort import insertion_sort
+from lab1.task5.src.selection_sort import selection_sort
 
 
 class TestCaesar(unittest.TestCase):
@@ -14,7 +14,7 @@ class TestCaesar(unittest.TestCase):
             [i for i in range(1000, 0)]
         ]
         for test in test_input:
-            self.assertEqual(insertion_sort(test), sorted(test))
+            self.assertEqual(selection_sort(test), sorted(test))
 
 if __name__ == "__main__":
     unittest.main()

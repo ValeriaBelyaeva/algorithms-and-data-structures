@@ -9,8 +9,8 @@ def linear_search(target: int, search_list: list) -> list:
 
 
 '''inp_file = open("input")
-target = int(inp_file.readline())
 search_list = list(map(int, inp_file.readline().split()))
+target = int(inp_file.readline())
 inp_file.close()
 out_file = open("output", 'w')
 try:
