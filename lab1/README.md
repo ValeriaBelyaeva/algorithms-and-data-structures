@@ -13,6 +13,11 @@
 - Клонируйте репозиторий:
    ```bash
    git clone https://github.com/ValeriaBelyaeva/algorithms-and-data-structures
+- Раскомментируйте код
+  ```bash
+   cd lab1/task1/tests/
+   ```
+
 
 ## Тестирование
 
