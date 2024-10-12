@@ -10,13 +10,13 @@ def linear_search(target: int, search_list: list) -> list:
     A list of indices where the target value is found. If the target is not found,
     returns a list containing only -1.
   """
-  to_return = []  # Initialize an empty list to store indices
-  for i in range(len(search_list)):  # Iterate through each element in the list
+  to_return = []  # Initialize an empty list for indexes
+  for i in range(len(search_list)):
     if search_list[i] == target:  # Check if the current element matches the target
       to_return.append(i)  # If found, append the index to the return list
-  if len(to_return) == 0:  # If the target was not found
-    return [-1]  # Return a list with -1
-  return to_return  # Return the list of indices where the target was found
+  if len(to_return) == 0:  # If the target id not in search_list
+    return [-1]
+  return to_return
 
 
 '''inp_file = open("input")  # Open input file

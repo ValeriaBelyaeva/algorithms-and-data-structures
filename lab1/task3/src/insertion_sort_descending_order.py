@@ -8,12 +8,12 @@ def insertion_sort_reverse(to_sort: list) -> list:
   Returns:
     The sorted list in reverse order.
   """
-  for i in range(1, len(to_sort)):  # Iterate through the list starting from the second element
-    key = to_sort[i]  # Store the current element as the "key"
-    j = i - 1  # Initialize the index `j` to the element before the current one
-    while j >= 0 and key > to_sort[j]:  # While `j` is within the bounds of the list and the `key` is greater than the element at index `j`
+  for i in range(1, len(to_sort)):
+    key = to_sort[i]
+    j = i - 1
+    while j >= 0 and key > to_sort[j]:
       to_sort[j + 1] = to_sort[j]  # Shift the element at index `j` one position to the right
-      j -= 1  # Move `j` one position to the left
+      j -= 1
     to_sort[j + 1] = key  # Insert the `key` at the correct position
 
   return to_sort  # Return the sorted list in reverse order
