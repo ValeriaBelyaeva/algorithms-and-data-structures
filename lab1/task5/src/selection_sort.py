@@ -1,10 +1,12 @@
+import sys
+
+
 def selection_sort(to_sort: list) -> list:
     """
     Sorts an to_sortay using selection sort.
     Args: to_sort: The to_sortay to be sorted.
     Returns:The sorted to_sortay.
     """
-
     n = len(to_sort)
     for i in range(n - 1):
         # Find the index of the minimum element in the remaining unsorted part of the to_sortay
@@ -15,8 +17,8 @@ def selection_sort(to_sort: list) -> list:
 
         # Swap the minimum element with the current element
         to_sort[i], to_sort[min_index] = to_sort[min_index], to_sort[i]
-
     return to_sort
+
 
 '''inp_file = open("input")  # Open input file
 inp = list(map(int, inp_file.readline().split()))  # Read the first line as a list of integers
