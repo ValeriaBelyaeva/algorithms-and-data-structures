@@ -6,6 +6,22 @@ import os
 PATH = r"D:\algorithms-and-data-structures\lab4\task8\txtf\input.txt"
 OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab4\task8\txtf\output.txt"
 
+def read_postfix(file_path):
+    """
+    Считывает из файла:
+      - N: число элементов выражения
+      - строку из N элементов (числа или '+', '-', '*'),
+        разделённых пробелом.
+    Возвращает список из этих N элементов (строк).
+    """
+    with open(file_path, 'r', encoding='utf-8') as f:
+        N = int(f.readline().strip())
+        expression = f.readline().strip().split()
+        # Проверим длину на всякий случай
+        assert len(expression) == N
+    return expression
+
+
 def evaluate_postfix(expression):
     """
     Вычисляет значение выражения в обратной польской записи.
@@ -27,25 +43,10 @@ def evaluate_postfix(expression):
             elif token == '*':
                 res = a * b
             else:
-                # По условию других операций не бывает
                 raise ValueError("Unknown operator")
             stack.append(res)
     return stack.pop()
 
-def read_postfix(file_path):
-    """
-    Считывает из файла:
-      - N: число элементов выражения
-      - строку из N элементов (числа или '+', '-', '*'),
-        разделённых пробелом.
-    Возвращает список из этих N элементов (строк).
-    """
-    with open(file_path, 'r', encoding='utf-8') as f:
-        N = int(f.readline().strip())
-        expression = f.readline().strip().split()
-        # Проверим длину на всякий случай
-        assert len(expression) == N
-    return expression
 
 def task8():
     """
