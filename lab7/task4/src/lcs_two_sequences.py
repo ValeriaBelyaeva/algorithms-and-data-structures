@@ -6,6 +6,13 @@ import os
 PATH = r"D:\algorithms-and-data-structures\lab7\task4\txtf\input.txt"
 OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab7\task4\txtf\output.txt"
 
+def write_result(result, file_path):
+    """
+    Записывает целочисленный результат (длину LCS) в файл.
+    """
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(str(result))
+
 def read_sequences(file_path):
     """
     Считывает две последовательности из файла:
@@ -32,13 +39,6 @@ def read_sequences(file_path):
         else:
             seqB = []
     return seqA, seqB
-
-def write_result(result, file_path):
-    """
-    Записывает целочисленный результат (длину LCS) в файл.
-    """
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(str(result))
 
 def lcs_length(seqA, seqB):
     """

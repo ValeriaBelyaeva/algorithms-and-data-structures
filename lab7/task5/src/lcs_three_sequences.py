@@ -6,6 +6,10 @@ import os
 PATH = r"D:\algorithms-and-data-structures\lab7\task5\txtf\input.txt"
 OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab7\task5\txtf\output.txt"
 
+def write_result(result, file_path):
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(str(result))
+
 def read_three_sequences(file_path):
     """
     Считывает три последовательности из файла:
@@ -27,10 +31,6 @@ def read_three_sequences(file_path):
         l = int(l_line) if l_line else 0
         C = list(map(int, f.readline().strip().split())) if l>0 else []
     return A, B, C
-
-def write_result(result, file_path):
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(str(result))
 
 def lcs_three_length(A, B, C):
     """
