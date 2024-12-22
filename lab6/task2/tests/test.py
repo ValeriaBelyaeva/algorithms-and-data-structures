@@ -1,15 +1,15 @@
-# lab5/task2/tests/test.py
+# lab6/task2/tests/test.py
 
 import unittest
 import os
 
-from lab5.task2.src.phonebook import task2, PATH, OUTPUT_PATH
+from lab6.task2.src.phonebook import task2, PATH, OUTPUT_PATH
 
 class TestPhonebook(unittest.TestCase):
 
     def setUp(self):
-        self.test_input_path = r"D:\algorithms-and-data-structures\lab5\task2\txtf\test_input.txt"
-        self.test_output_path = r"D:\algorithms-and-data-structures\lab5\task2\txtf\test_output.txt"
+        self.test_input_path = r"D:\algorithms-and-data-structures\lab6\task2\txtf\test_input.txt"
+        self.test_output_path = r"D:\algorithms-and-data-structures\lab6\task2\txtf\test_output.txt"
 
         self.original_path = PATH
         self.original_output_path = OUTPUT_PATH
@@ -25,12 +25,12 @@ class TestPhonebook(unittest.TestCase):
             os.remove(self.test_output_path)
 
     def _override_global_paths(self):
-        import lab5.task2.src.phonebook as module
+        import lab6.task2.src.phonebook as module
         module.PATH = self.test_input_path
         module.OUTPUT_PATH = self.test_output_path
 
     def _restore_global_paths(self):
-        import lab5.task2.src.phonebook as module
+        import lab6.task2.src.phonebook as module
         module.PATH = self.original_path
         module.OUTPUT_PATH = self.original_output_path
 

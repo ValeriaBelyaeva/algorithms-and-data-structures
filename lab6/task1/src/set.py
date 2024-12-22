@@ -1,11 +1,11 @@
-# lab5/task1/src/set.py
+# lab6/task1/src/set.py
 
 import sys
 import os
 
 # Глобальные пути к входному/выходному файлам
-PATH = r"D:\algorithms-and-data-structures\lab5\task1\txtf\input.txt"
-OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab5\task1\txtf\output.txt"
+PATH = r"D:\algorithms-and-data-structures\lab6\task1\txtf\input.txt"
+OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab6\task1\txtf\output.txt"
 
 def task1():
     """

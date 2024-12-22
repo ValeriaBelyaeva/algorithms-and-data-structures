@@ -1,10 +1,10 @@
-# lab5/task7/src/precious_stones.py
+# lab6/task7/src/precious_stones.py
 
 import sys
 import os
 
-PATH = r"D:\algorithms-and-data-structures\lab5\task7\txtf\input.txt"
-OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab5\task7\txtf\output.txt"
+PATH = r"D:\algorithms-and-data-structures\lab6\task7\txtf\input.txt"
+OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab6\task7\txtf\output.txt"
 
 def task7():
     """

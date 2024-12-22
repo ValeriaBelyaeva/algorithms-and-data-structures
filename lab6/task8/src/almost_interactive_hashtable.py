@@ -1,10 +1,10 @@
-# lab5/task8/src/almost_interactive_hashtable.py
+# lab6/task8/src/almost_interactive_hashtable.py
 
 import sys
 import os
 
-PATH = r"D:\algorithms-and-data-structures\lab5\task8\txtf\input.txt"
-OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab5\task8\txtf\output.txt"
+PATH = r"D:\algorithms-and-data-structures\lab6\task8\txtf\input.txt"
+OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab6\task8\txtf\output.txt"
 
 def task8():
     """

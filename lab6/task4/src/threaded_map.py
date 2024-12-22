@@ -1,10 +1,10 @@
-# lab5/task4/src/threaded_map.py
+# lab6/task4/src/threaded_map.py
 
 import sys
 import os
 
-PATH = r"D:\algorithms-and-data-structures\lab5\task4\txtf\input.txt"
-OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab5\task4\txtf\output.txt"
+PATH = r"D:\algorithms-and-data-structures\lab6\task4\txtf\input.txt"
+OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab6\task4\txtf\output.txt"
 
 class Node:
     """

@@ -1,11 +1,11 @@
-# lab5/task2/src/phonebook.py
+# lab6/task2/src/phonebook.py
 
 import sys
 import os
 
 # Глобальные пути к входному/выходному файлам
-PATH = r"D:\algorithms-and-data-structures\lab5\task2\txtf\input.txt"
-OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab5\task2\txtf\output.txt"
+PATH = r"D:\algorithms-and-data-structures\lab6\task2\txtf\input.txt"
+OUTPUT_PATH = r"D:\algorithms-and-data-structures\lab6\task2\txtf\output.txt"
 
 def task2():
     """

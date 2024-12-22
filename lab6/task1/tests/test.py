@@ -1,9 +1,9 @@
-# lab5/task1/tests/test.py
+# lab6/task1/tests/test.py
 
 import unittest
 import os
 
-from lab5.task1.src.set import task1, PATH, OUTPUT_PATH
+from lab6.task1.src.set import task1, PATH, OUTPUT_PATH
 
 class TestSet(unittest.TestCase):
 
@@ -11,8 +11,8 @@ class TestSet(unittest.TestCase):
         """
         Переопределяем пути к input.txt и output.txt на тестовые
         """
-        self.test_input_path = r"D:\algorithms-and-data-structures\lab5\task1\txtf\test_input.txt"
-        self.test_output_path = r"D:\algorithms-and-data-structures\lab5\task1\txtf\test_output.txt"
+        self.test_input_path = r"D:\algorithms-and-data-structures\lab6\task1\txtf\test_input.txt"
+        self.test_output_path = r"D:\algorithms-and-data-structures\lab6\task1\txtf\test_output.txt"
 
         self.original_path = PATH
         self.original_output_path = OUTPUT_PATH
@@ -31,12 +31,12 @@ class TestSet(unittest.TestCase):
             os.remove(self.test_output_path)
 
     def _override_global_paths(self):
-        import lab5.task1.src.set as module
+        import lab6.task1.src.set as module
         module.PATH = self.test_input_path
         module.OUTPUT_PATH = self.test_output_path
 
     def _restore_global_paths(self):
-        import lab5.task1.src.set as module
+        import lab6.task1.src.set as module
         module.PATH = self.original_path
         module.OUTPUT_PATH = self.original_output_path
 

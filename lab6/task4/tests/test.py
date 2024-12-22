@@ -1,15 +1,15 @@
-# lab5/task4/tests/test.py
+# lab6/task4/tests/test.py
 
 import unittest
 import os
 
-from lab5.task4.src.threaded_map import task4, PATH, OUTPUT_PATH
+from lab6.task4.src.threaded_map import task4, PATH, OUTPUT_PATH
 
 class TestThreadedMap(unittest.TestCase):
 
     def setUp(self):
-        self.test_input_path = r"D:\algorithms-and-data-structures\lab5\task4\txtf\test_input.txt"
-        self.test_output_path = r"D:\algorithms-and-data-structures\lab5\task4\txtf\test_output.txt"
+        self.test_input_path = r"D:\algorithms-and-data-structures\lab6\task4\txtf\test_input.txt"
+        self.test_output_path = r"D:\algorithms-and-data-structures\lab6\task4\txtf\test_output.txt"
 
         self.original_path = PATH
         self.original_output_path = OUTPUT_PATH
@@ -24,12 +24,12 @@ class TestThreadedMap(unittest.TestCase):
             os.remove(self.test_output_path)
 
     def _override_global_paths(self):
-        import lab5.task4.src.threaded_map as module
+        import lab6.task4.src.threaded_map as module
         module.PATH = self.test_input_path
         module.OUTPUT_PATH = self.test_output_path
 
     def _restore_global_paths(self):
-        import lab5.task4.src.threaded_map as module
+        import lab6.task4.src.threaded_map as module
         module.PATH = self.original_path
         module.OUTPUT_PATH = self.original_output_path
 
